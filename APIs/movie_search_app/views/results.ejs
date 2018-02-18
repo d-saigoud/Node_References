@@ -1,0 +1,19 @@
+
+<h1>Results Page</h1>
+
+
+<% results.forEach(function(result) { %>
+    <div style="border: 1px solid red">
+        <img src="<%= result.Poster %>">
+        <br>
+        <%= result.Title %> <br>
+        <%= result.Year %> <br>
+        <%= result.Type %> <br>
+        <%= result.imdbID %> <br>
+    </div>
+    <hr />
+<% }); %>
+
+
+<a href="/">Back</a>
+
